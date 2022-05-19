@@ -198,10 +198,6 @@ body {
           box-shadow: 0 3px 7px rgba(255, 82, 191, 0.7);
 }
 
-.button {
-  cursor: pointer;
-}
-
 footer {
   margin-top: -7rem;
   padding: 3rem 1rem;
