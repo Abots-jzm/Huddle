@@ -168,6 +168,13 @@ button.primary:active {
   margin-top: 1rem;
 }
 
+@media (hover: hover) {
+  #call-to-action button:hover {
+    -webkit-box-shadow: 0 3px 7px rgba(255, 82, 191, 0.7);
+            box-shadow: 0 3px 7px rgba(255, 82, 191, 0.7);
+  }
+}
+
 #call-to-action {
   color: var(--dark-cyan);
   position: relative;
@@ -379,10 +386,6 @@ footer .copyright {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-  }
-  #call-to-action button:hover {
-    -webkit-box-shadow: 0 3px 7px rgba(255, 82, 191, 0.7);
-            box-shadow: 0 3px 7px rgba(255, 82, 191, 0.7);
   }
   footer {
     padding-left: 5rem;

@@ -154,6 +154,16 @@ button.primary{
     }
 }
 
+@media (hover : hover) {
+    #call-to-action{
+        button{
+            &:hover {
+                    box-shadow: 0 3px 7px hsla(322, 100%, 66%, 0.7);
+                }
+        }
+    }
+}
+
 #call-to-action{
     color: var(--dark-cyan);
     position: relative;
@@ -339,11 +349,11 @@ footer{
         justify-content: center;
         flex-direction: column;
 
-        button{
-            &:hover {
-                    box-shadow: 0 3px 7px hsla(322, 100%, 66%, 0.7);
-                }
-        }
+        // button{
+        //     &:hover {
+        //             box-shadow: 0 3px 7px hsla(322, 100%, 66%, 0.7);
+        //         }
+        // }
     }
 
     footer{
