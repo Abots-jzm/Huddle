@@ -195,11 +195,6 @@ button.primary:active {
   transition: box-shadow .15s, -webkit-box-shadow .15s;
 }
 
-#call-to-action button:hover {
-  -webkit-box-shadow: 0 3px 7px rgba(255, 82, 191, 0.7);
-          box-shadow: 0 3px 7px rgba(255, 82, 191, 0.7);
-}
-
 button {
   cursor: pointer;
 }
@@ -258,6 +253,12 @@ footer .menu ul {
   list-style: none;
   line-height: 2.5rem;
   font-size: 1.2rem;
+}
+
+footer .menu ul li {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
 }
 
 footer .menu ul li:hover, footer .menu ul li:active {
@@ -379,6 +380,10 @@ footer .copyright {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  #call-to-action button:hover {
+    -webkit-box-shadow: 0 3px 7px rgba(255, 82, 191, 0.7);
+            box-shadow: 0 3px 7px rgba(255, 82, 191, 0.7);
+  }
   footer {
     padding-left: 5rem;
     padding-right: 5rem;
@@ -446,7 +451,7 @@ footer .copyright {
     height: 5rem;
   }
   .hero header .logo {
-    width: 9rem;
+    width: 6rem;
   }
   .hero header .try-free {
     margin-right: 2rem;

@@ -13,6 +13,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,700&family=Poppins:wght@600&display=swap');
 
+html{
+    // font-size: 29.09px;
+}
+
 img{
     width: 100%;
 }
@@ -172,9 +176,9 @@ button.primary{
         ;
         transition: box-shadow .15s;
         
-        &:hover {
-            box-shadow: 0 3px 7px hsla(322, 100%, 66%, 0.7);
-        }
+        // &:hover {
+        //     box-shadow: 0 3px 7px hsla(322, 100%, 66%, 0.7);
+        // }
     }
 }
 
@@ -236,6 +240,8 @@ footer{
             font-size: 1.2rem;
 
             li{
+                width: max-content;
+
                 &:hover,
                 &:active{
                     text-decoration: underline;
@@ -332,13 +338,17 @@ footer{
         display: flex;
         justify-content: center;
         flex-direction: column;
+
+        button{
+            &:hover {
+                    box-shadow: 0 3px 7px hsla(322, 100%, 66%, 0.7);
+                }
+        }
     }
 
     footer{
         padding-left: 5rem;
         padding-right: 5rem;
-
-
 
         .footer-container{
             display: flex;
@@ -391,7 +401,7 @@ footer{
             height: 5rem;
 
             .logo {
-                width: 9rem;
+                width: 6rem;
             }
 
             .try-free {
