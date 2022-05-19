@@ -37,13 +37,13 @@ button.primary{
     box-shadow: 0 5px 5px hsla(322, 100%, 66%, 0.2);
     transition: box-shadow .15s;
 
-    &:hover{
-        box-shadow: 0 3px 7px hsla(322, 100%, 66%, 0.7);
-    }
+    // &:hover{
+    //     box-shadow: 0 3px 7px hsla(322, 100%, 66%, 0.7);
+    // }
 
-    &:active{
-        background-color: hsl(322, 100%, 80%);
-    }
+    // &:active{
+    //     background-color: hsl(322, 100%, 80%);
+    // }
 }
 
 .hero{

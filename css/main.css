@@ -38,15 +38,6 @@ button.primary {
   transition: box-shadow .15s, -webkit-box-shadow .15s;
 }
 
-button.primary:hover {
-  -webkit-box-shadow: 0 3px 7px rgba(255, 82, 191, 0.7);
-          box-shadow: 0 3px 7px rgba(255, 82, 191, 0.7);
-}
-
-button.primary:active {
-  background-color: #ff99da;
-}
-
 .hero {
   background-image: url(../images/bg-hero-mobile.svg), -webkit-gradient(linear, left top, left bottom, from(var(--pale-cyan)), to(var(--pale-cyan)));
   background-image: url(../images/bg-hero-mobile.svg), linear-gradient(var(--pale-cyan), var(--pale-cyan));
