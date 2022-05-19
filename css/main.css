@@ -285,7 +285,9 @@ footer .socials ul {
   width: 40%;
 }
 
-footer .socials ul li {
+footer .socials ul a {
+  text-decoration: none;
+  color: white;
   border: 1px solid var(--pale-cyan);
   border-radius: 50%;
   height: 2em;
@@ -301,7 +303,7 @@ footer .socials ul li {
           align-items: center;
 }
 
-footer .socials ul li:hover, footer .socials ul li:active {
+footer .socials ul a:hover, footer .socials ul a:active {
   cursor: pointer;
   color: var(--primary-color);
   border-color: var(--primary-color);

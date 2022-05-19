@@ -254,7 +254,9 @@ footer{
             justify-content: space-between;
             width: 40%;
             
-            li{
+            a{
+                text-decoration: none;
+                color: white;
                 border: 1px solid var(--pale-cyan);
                 border-radius: 50%;
                 height: 2em;
