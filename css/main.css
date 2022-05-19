@@ -317,6 +317,12 @@ footer .copyright {
   width: 11rem;
 }
 
+@media (hover: hover) {
+  button {
+    cursor: pointer;
+  }
+}
+
 @media only screen and (min-width: 700px) {
   .hero {
     background-position: top;
@@ -432,9 +438,6 @@ footer .copyright {
 }
 
 @media only screen and (min-width: 900px) {
-  .button {
-    cursor: pointer;
-  }
   .hero header {
     display: -webkit-box;
     display: -ms-flexbox;

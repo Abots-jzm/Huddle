@@ -284,6 +284,12 @@ footer{
     width: 11rem;
 }
 
+@media (hover:hover){
+    button {
+        cursor: pointer;
+    }
+}
+
 @media only screen and(min-width: 700px) {
     
     .hero{
@@ -377,10 +383,6 @@ footer{
 }
 
 @media only screen and(min-width: 900px) {
-    .button{
-        cursor: pointer;
-    }
-
     .hero {
         header {
             display: flex;
