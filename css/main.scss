@@ -25,12 +25,10 @@ body{
     font-family: 'Open Sans', sans-serif;
 }
 
-div.primary{
+button.primary{
     text-align: center;
     background-color: var(--primary-color);
-    // padding: .8rem 4.25rem;
-    width: 200px;
-    height: 70px;
+    padding: .8rem 4.25rem;
     border-radius: 60px;
     border: none;
     color: var(--pale-cyan);
@@ -39,13 +37,13 @@ div.primary{
     box-shadow: 0 5px 5px hsla(322, 100%, 66%, 0.2);
     transition: box-shadow .15s;
 
-    // &:hover{
-    //     box-shadow: 0 3px 7px hsla(322, 100%, 66%, 0.7);
-    // }
+    &:hover{
+        box-shadow: 0 3px 7px hsla(322, 100%, 66%, 0.7);
+    }
 
-    // &:active{
-    //     background-color: hsl(322, 100%, 80%);
-    // }
+    &:active{
+        background-color: hsl(322, 100%, 80%);
+    }
 }
 
 .hero{
@@ -156,16 +154,6 @@ div.primary{
     }
 }
 
-@media (hover : hover) {
-    #call-to-action{
-        button{
-            &:hover {
-                    box-shadow: 0 3px 7px hsla(322, 100%, 66%, 0.7);
-                }
-        }
-    }
-}
-
 #call-to-action{
     color: var(--dark-cyan);
     position: relative;
@@ -188,9 +176,9 @@ div.primary{
         ;
         transition: box-shadow .15s;
         
-        // &:hover {
-        //     box-shadow: 0 3px 7px hsla(322, 100%, 66%, 0.7);
-        // }
+        &:hover {
+            box-shadow: 0 3px 7px hsla(322, 100%, 66%, 0.7);
+        }
     }
 }
 
@@ -350,12 +338,6 @@ footer{
         display: flex;
         justify-content: center;
         flex-direction: column;
-
-        // button{
-        //     &:hover {
-        //             box-shadow: 0 3px 7px hsla(322, 100%, 66%, 0.7);
-        //         }
-        // }
     }
 
     footer{

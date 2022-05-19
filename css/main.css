@@ -21,11 +21,10 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
-div.primary {
+button.primary {
   text-align: center;
   background-color: var(--primary-color);
-  width: 200px;
-  height: 70px;
+  padding: .8rem 4.25rem;
   border-radius: 60px;
   border: none;
   color: var(--pale-cyan);
@@ -37,6 +36,15 @@ div.primary {
   transition: -webkit-box-shadow .15s;
   transition: box-shadow .15s;
   transition: box-shadow .15s, -webkit-box-shadow .15s;
+}
+
+button.primary:hover {
+  -webkit-box-shadow: 0 3px 7px rgba(255, 82, 191, 0.7);
+          box-shadow: 0 3px 7px rgba(255, 82, 191, 0.7);
+}
+
+button.primary:active {
+  background-color: #ff99da;
 }
 
 .hero {
@@ -160,13 +168,6 @@ div.primary {
   margin-top: 1rem;
 }
 
-@media (hover: hover) {
-  #call-to-action button:hover {
-    -webkit-box-shadow: 0 3px 7px rgba(255, 82, 191, 0.7);
-            box-shadow: 0 3px 7px rgba(255, 82, 191, 0.7);
-  }
-}
-
 #call-to-action {
   color: var(--dark-cyan);
   position: relative;
@@ -192,6 +193,11 @@ div.primary {
   transition: -webkit-box-shadow .15s;
   transition: box-shadow .15s;
   transition: box-shadow .15s, -webkit-box-shadow .15s;
+}
+
+#call-to-action button:hover {
+  -webkit-box-shadow: 0 3px 7px rgba(255, 82, 191, 0.7);
+          box-shadow: 0 3px 7px rgba(255, 82, 191, 0.7);
 }
 
 button {
