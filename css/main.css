@@ -78,7 +78,7 @@ button.primary:active {
   margin-right: 1rem;
 }
 
-.hero header .try-free button {
+.hero header .try-free div {
   background-color: white;
   color: var(--dark-cyan);
   font-size: .7rem;
@@ -94,12 +94,12 @@ button.primary:active {
   transition: box-shadow .15s, -webkit-box-shadow .15s;
 }
 
-.hero header .try-free button:hover {
+.hero header .try-free div:hover {
   -webkit-box-shadow: 0px 3px 7px rgba(128, 141, 153, 0.7);
           box-shadow: 0px 3px 7px rgba(128, 141, 153, 0.7);
 }
 
-.hero header .try-free button:active {
+.hero header .try-free div:active {
   color: gray;
 }
 
