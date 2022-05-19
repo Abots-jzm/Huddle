@@ -1,4 +1,4 @@
-* {
+*,html,body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -28,7 +28,9 @@ body{
 button.primary{
     text-align: center;
     background-color: var(--primary-color);
-    padding: .8rem 4.25rem;
+    // padding: .8rem 4.25rem;
+    width: 200px;
+    height: 70px;
     border-radius: 60px;
     border: none;
     color: var(--pale-cyan);

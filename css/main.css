@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,700&family=Poppins:wght@600&display=swap");
-* {
+*, html, body {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
@@ -24,7 +24,8 @@ body {
 button.primary {
   text-align: center;
   background-color: var(--primary-color);
-  padding: .8rem 4.25rem;
+  width: 200px;
+  height: 70px;
   border-radius: 60px;
   border: none;
   color: var(--pale-cyan);
