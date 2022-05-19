@@ -25,7 +25,7 @@ body{
     font-family: 'Open Sans', sans-serif;
 }
 
-button.primary{
+.button.primary{
     text-align: center;
     background-color: var(--primary-color);
     padding: .8rem 4.25rem;
@@ -66,25 +66,22 @@ button.primary{
 
         .try-free{
             margin-right: 1rem;
+            background-color: white;
+            color: var(--dark-cyan);
+            font-size: .7rem;
+            font-weight: 700;
+            padding: .4rem 1.5rem;
+            border: none;
+            border-radius: 60px;
+            box-shadow: 0px 3px 7px hsla(209, 11%, 55%, 0.35);
+            transition: box-shadow .15s;
 
-            div{
-                background-color: white;
-                color: var(--dark-cyan);
-                font-size: .7rem;
-                font-weight: 700;
-                padding: .4rem 1.5rem;
-                border: none;
-                border-radius: 60px;
-                box-shadow: 0px 3px 7px hsla(209, 11%, 55%, 0.35);
-                transition: box-shadow .15s;
-
-                &:hover {
-                    box-shadow: 0px 3px 7px hsla(209, 11%, 55%, 0.7);
-                }
-            
-                &:active {
-                    color: gray;
-                }
+            &:hover {
+                box-shadow: 0px 3px 7px hsla(209, 11%, 55%, 0.7);
+            }
+        
+            &:active {
+                color: gray;
             }
         }
     }
@@ -169,11 +166,11 @@ button.primary{
         margin-bottom: 2rem;
     }
 
-    button{
+    .button{
+        display: inline-block;
         font-size: .7rem;
         padding: 1rem 4rem;
         box-shadow: 0 5px 5px hsla(209, 11%, 55%, 0.25);
-        ;
         transition: box-shadow .15s;
         
         &:hover {
@@ -182,7 +179,7 @@ button.primary{
     }
 }
 
-button{
+.button{
     cursor: pointer;
 }
 
@@ -401,7 +398,7 @@ footer{
             .try-free {
                 margin-right: 2rem;
 
-                button {
+                .button {
                     padding: .7rem 2.5rem;
                 }
             }

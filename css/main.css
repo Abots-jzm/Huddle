@@ -21,7 +21,7 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
-button.primary {
+.button.primary {
   text-align: center;
   background-color: var(--primary-color);
   padding: .8rem 4.25rem;
@@ -38,12 +38,12 @@ button.primary {
   transition: box-shadow .15s, -webkit-box-shadow .15s;
 }
 
-button.primary:hover {
+.button.primary:hover {
   -webkit-box-shadow: 0 3px 7px rgba(255, 82, 191, 0.7);
           box-shadow: 0 3px 7px rgba(255, 82, 191, 0.7);
 }
 
-button.primary:active {
+.button.primary:active {
   background-color: #ff99da;
 }
 
@@ -76,9 +76,6 @@ button.primary:active {
 
 .hero header .try-free {
   margin-right: 1rem;
-}
-
-.hero header .try-free div {
   background-color: white;
   color: var(--dark-cyan);
   font-size: .7rem;
@@ -94,12 +91,12 @@ button.primary:active {
   transition: box-shadow .15s, -webkit-box-shadow .15s;
 }
 
-.hero header .try-free div:hover {
+.hero header .try-free:hover {
   -webkit-box-shadow: 0px 3px 7px rgba(128, 141, 153, 0.7);
           box-shadow: 0px 3px 7px rgba(128, 141, 153, 0.7);
 }
 
-.hero header .try-free div:active {
+.hero header .try-free:active {
   color: gray;
 }
 
@@ -184,7 +181,8 @@ button.primary:active {
   margin-bottom: 2rem;
 }
 
-#call-to-action button {
+#call-to-action .button {
+  display: inline-block;
   font-size: .7rem;
   padding: 1rem 4rem;
   -webkit-box-shadow: 0 5px 5px rgba(128, 141, 153, 0.25);
@@ -195,12 +193,12 @@ button.primary:active {
   transition: box-shadow .15s, -webkit-box-shadow .15s;
 }
 
-#call-to-action button:hover {
+#call-to-action .button:hover {
   -webkit-box-shadow: 0 3px 7px rgba(255, 82, 191, 0.7);
           box-shadow: 0 3px 7px rgba(255, 82, 191, 0.7);
 }
 
-button {
+.button {
   cursor: pointer;
 }
 
@@ -457,7 +455,7 @@ footer .copyright {
   .hero header .try-free {
     margin-right: 2rem;
   }
-  .hero header .try-free button {
+  .hero header .try-free .button {
     padding: .7rem 2.5rem;
   }
   .hero .hero-main {
