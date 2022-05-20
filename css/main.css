@@ -38,11 +38,6 @@ button.primary {
   transition: box-shadow .15s, -webkit-box-shadow .15s;
 }
 
-button.primary:hover {
-  -webkit-box-shadow: 0 3px 7px rgba(255, 82, 191, 0.7);
-          box-shadow: 0 3px 7px rgba(255, 82, 191, 0.7);
-}
-
 button.primary:active {
   background-color: #ff99da;
 }
@@ -52,7 +47,7 @@ button.primary:active {
   background-image: url(../images/bg-hero-mobile.svg), linear-gradient(var(--pale-cyan), var(--pale-cyan));
   background-repeat: no-repeat;
   background-position: top;
-  background-size: 23rem;
+  background-size: cover;
   padding-bottom: 3rem;
 }
 
@@ -89,11 +84,6 @@ button.primary:active {
   transition: -webkit-box-shadow .15s;
   transition: box-shadow .15s;
   transition: box-shadow .15s, -webkit-box-shadow .15s;
-}
-
-.hero header .try-free:hover {
-  -webkit-box-shadow: 0px 3px 7px rgba(128, 141, 153, 0.7);
-          box-shadow: 0px 3px 7px rgba(128, 141, 153, 0.7);
 }
 
 .hero header .try-free:active {
@@ -191,11 +181,6 @@ button.primary:active {
   transition: box-shadow .15s, -webkit-box-shadow .15s;
 }
 
-#call-to-action button:hover {
-  -webkit-box-shadow: 0 3px 7px rgba(255, 82, 191, 0.7);
-          box-shadow: 0 3px 7px rgba(255, 82, 191, 0.7);
-}
-
 footer {
   margin-top: -7rem;
   padding: 3rem 1rem;
@@ -258,7 +243,7 @@ footer .menu ul li {
   width: max-content;
 }
 
-footer .menu ul li:hover, footer .menu ul li:active {
+footer .menu ul li:active {
   text-decoration: underline;
   cursor: pointer;
 }
@@ -302,20 +287,16 @@ footer .socials ul a {
           align-items: center;
 }
 
-footer .socials ul a:visited {
-  color: white;
-}
-
-footer .socials ul a:hover, footer .socials ul a:active {
+footer .socials ul a:active {
   cursor: pointer;
   color: var(--primary-color);
   border-color: var(--primary-color);
 }
 
 footer .copyright {
-  font-size: .7em;
+  font-size: .7rem;
   text-align: center;
-  margin-bottom: 2em;
+  margin-bottom: 2rem;
 }
 
 #footer-logo {
@@ -326,9 +307,12 @@ footer .copyright {
   button {
     cursor: pointer;
   }
+  button.primary:hover {
+    -webkit-box-shadow: 0 3px 7px rgba(255, 82, 191, 0.7);
+            box-shadow: 0 3px 7px rgba(255, 82, 191, 0.7);
+  }
   .hero {
     background-position: top;
-    background-size: cover;
     padding-bottom: 3rem;
   }
   .hero header {
@@ -352,6 +336,10 @@ footer .copyright {
     margin-right: 3rem;
     margin-top: 3rem;
     padding: 1rem 3.5rem;
+  }
+  .hero header .try-free:hover {
+    -webkit-box-shadow: 0px 3px 7px rgba(128, 141, 153, 0.7);
+            box-shadow: 0px 3px 7px rgba(128, 141, 153, 0.7);
   }
   .hero .hero-main {
     margin-top: 3rem;
@@ -447,6 +435,10 @@ footer .copyright {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  #call-to-action button:hover {
+    -webkit-box-shadow: 0 3px 7px rgba(255, 82, 191, 0.7);
+            box-shadow: 0 3px 7px rgba(255, 82, 191, 0.7);
+  }
   footer {
     padding-left: 5rem;
     padding-right: 5rem;
@@ -484,6 +476,10 @@ footer .copyright {
             justify-content: center;
     margin-left: -5rem;
   }
+  footer .footer-container .menu ul li:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
   footer .footer-container .socials {
     -webkit-box-flex: 1;
         -ms-flex: 1;
@@ -493,6 +489,11 @@ footer .copyright {
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
+  }
+  footer .footer-container .socials ul a:hover {
+    cursor: pointer;
+    color: var(--primary-color);
+    border-color: var(--primary-color);
   }
   .copyright {
     margin-top: 4rem;
