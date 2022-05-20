@@ -303,6 +303,10 @@ footer .socials ul a {
           align-items: center;
 }
 
+footer .socials ul a:visited {
+  color: white;
+}
+
 footer .socials ul a:hover, footer .socials ul a:active {
   cursor: pointer;
   color: var(--primary-color);
@@ -319,11 +323,75 @@ footer .copyright {
   width: 11rem;
 }
 
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 800px) {
+  button {
+    cursor: pointer;
+  }
   .hero {
     background-position: top;
     background-size: cover;
     padding-bottom: 3rem;
+  }
+  .hero header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 5rem;
+  }
+  .hero header .logo {
+    margin-top: 3rem;
+    margin-left: 3rem;
+    width: 12rem;
+  }
+  .hero header .try-free {
+    margin-right: 3rem;
+    margin-top: 3rem;
+    padding: 1rem 3.5rem;
+  }
+  .hero .hero-main {
+    margin-top: 3rem;
+    text-align: left;
+    padding-left: 5rem;
+    padding-right: 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .hero .hero-main .hero-text {
+    padding: 0;
+    display: inline-block;
+    -webkit-box-flex: 5;
+        -ms-flex: 5;
+            flex: 5;
+  }
+  .hero .hero-main .hero-text h2 {
+    font-size: 2rem;
+    width: 85%;
+  }
+  .hero .hero-main .hero-text .get-started {
+    display: inline-block;
+  }
+  .hero .hero-main .hero-text .get-started button {
+    padding: 1rem 3rem;
+  }
+  .hero .hero-main .mockup {
+    display: inline-block;
+    -webkit-box-flex: 6;
+        -ms-flex: 6;
+            flex: 6;
+    margin-top: 3.5rem;
+    padding: 0 3rem;
   }
   .features {
     padding: 4rem 3rem;
@@ -430,68 +498,6 @@ footer .copyright {
   .copyright {
     margin-top: 4rem;
     text-align: right !important;
-  }
-}
-
-@media only screen and (min-width: 900px) {
-  button {
-    cursor: pointer;
-  }
-  .hero header {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    height: 5rem;
-  }
-  .hero header .logo {
-    width: 6rem;
-  }
-  .hero header .try-free {
-    margin-right: 2rem;
-  }
-  .hero header .try-free .button {
-    padding: .7rem 2.5rem;
-  }
-  .hero .hero-main {
-    margin-top: 3rem;
-    text-align: left;
-    padding: 0 3rem;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-  }
-  .hero .hero-main .hero-text {
-    padding: 0;
-    display: inline-block;
-    -webkit-box-flex: 4;
-        -ms-flex: 4;
-            flex: 4;
-  }
-  .hero .hero-main .hero-text h2 {
-    font-size: 2rem;
-    width: 75%;
-  }
-  .hero .hero-main .hero-text .get-started {
-    display: inline-block;
-  }
-  .hero .hero-main .mockup {
-    display: inline-block;
-    -webkit-box-flex: 6;
-        -ms-flex: 6;
-            flex: 6;
-    margin-top: 3.5rem;
-    padding: 0 3rem;
   }
 }
 /*# sourceMappingURL=main.css.map */

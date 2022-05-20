@@ -13,10 +13,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,700&family=Poppins:wght@600&display=swap');
 
-html{
-    // font-size: 29.09px;
-}
-
 img{
     width: 100%;
 }
@@ -265,6 +261,10 @@ footer{
                 justify-content: center;
                 align-items: center;
 
+                &:visited{
+                    color: white;
+                }
+
                 &:hover,
                 &:active{
                     cursor: pointer;
@@ -286,12 +286,72 @@ footer{
     width: 11rem;
 }
 
-@media only screen and(min-width: 700px) {
-    
-    .hero{
+@media only screen and(min-width: 800px) {   
+    button {
+        cursor: pointer;
+    }
+
+    .hero {
         background-position: top;
         background-size: cover;
         padding-bottom: 3rem;
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 5rem;
+
+            .logo {
+                margin-top: 3rem;
+                margin-left: 3rem;
+                width: 12rem;
+            }
+
+            .try-free {
+                margin-right: 3rem;
+                margin-top: 3rem;
+                padding: 1rem 3.5rem;
+            }
+        }
+
+        .hero-main {
+            margin-top: 3rem;
+            text-align: left;
+            padding-left: 5rem;
+            padding-right: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+
+            .hero-text {
+                padding: 0;
+                display: inline-block;
+                flex: 5;
+
+                h2 {
+                    font-size: 2rem;
+                    width: 85%;
+                }
+
+                .get-started {
+                    display: inline-block;
+
+                    button{
+                        padding: 1rem 3rem;
+                    }
+                }
+
+            }
+
+
+            .mockup {
+                display: inline-block;
+                flex: 6;
+                margin-top: 3.5rem;
+                padding: 0 3rem;
+            }
+        }
     }
 
     .features {
@@ -376,64 +436,4 @@ footer{
     }
 
 
-}
-
-@media only screen and(min-width: 900px) {
-    button{
-        cursor: pointer;
-    }
-
-    .hero {
-        header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            height: 5rem;
-
-            .logo {
-                width: 6rem;
-            }
-
-            .try-free {
-                margin-right: 2rem;
-
-                .button {
-                    padding: .7rem 2.5rem;
-                }
-            }
-        }
-
-        .hero-main {
-            margin-top: 3rem;
-            text-align: left;
-            padding: 0 3rem;
-            display: flex;
-            align-items: center;
-            justify-content: space-around;
-
-            .hero-text {
-                padding: 0;
-                display: inline-block;
-                flex: 4;
-
-                h2 {
-                    font-size: 2rem;
-                    width: 75%;
-                }
-
-                .get-started{
-                    display: inline-block;
-                }
-
-            }
-
-
-            .mockup {
-                display: inline-block;
-                flex: 6;
-                margin-top: 3.5rem;
-                padding: 0 3rem;
-            }
-        }
-    }
 }
