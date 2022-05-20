@@ -118,7 +118,6 @@ button.primary:active {
 
 .hero .hero-main .hero-text p {
   margin-top: 1.5rem;
-  font-size: 1rem;
   line-height: 1.55rem;
 }
 
@@ -326,6 +325,9 @@ footer .copyright {
 @media only screen and (min-width: 800px) {
   button {
     cursor: pointer;
+  }
+  p {
+    font-size: 1rem !important;
   }
   .hero {
     background-position: top;
